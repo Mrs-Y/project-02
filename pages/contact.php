@@ -45,7 +45,7 @@
         $txt = "You have recived a e-mail from " . $first_name . $last_name . ".\n\n" . $message;
 
         mail($mailTo, $subject, $txt, $headers);
-        header("Location: home.php?mailsend");
+        header("Location: index.php?mailsend");
     }
     ?>
 
