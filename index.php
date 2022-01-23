@@ -29,12 +29,18 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunrise Apartments</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <style>
+        @font-face {
+            font-family: JennaSue;
+            src: url(./font/JennaSue.ttf);
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <?php include_once("nav.php"); ?>
+        <?php include_once("./pages/nav.php"); ?>
     </header>
 
     <div id="home">
@@ -45,17 +51,17 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
         <br>
         <div>
             <ul>
-                <li class="btn-xy"><a href="./location.php" target="_self" class="btn-xy">Discover</a></li>
-                <li class="btn-xy"><a href="./galery.php" target="_self" class="btn-xy">Galery</a></li>
+                <li class="btn-xy"><a href="./index.php#location" class="btn-xy">Discover</a></li>
+                <li class="btn-xy"><a href="./pages/galery.php" target="_self" class="btn-xy">Galery</a></li>
             </ul>
         </div>
         <h3>Congratulations! You have found the best Apartments on the best location in Kragujevac!</h3>
     </div>
 
-    <div id="booknow">
-        <div>
+    <div>
+        <div id="check">
             <p style="font-size: 2em; color: #ffcbae;"><i>The best price is on our site!</i></p>
-            <span style="font-size: 1.3em;">$135/night</span>
+            <span style="font-size: 1.3em; color: #eb7b68;">$135/night</span>
         </div>
         <?php
         if (isset($totalprice)) {
@@ -65,11 +71,11 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
                 echo "Check-Out date must be higher than Check-In date. Please enter valid data.";
             }
         } ?>
-        <div>
-            <form action="./home.php" method="get">
-                <input type="date" name="ckn-in" id="ckn-in" />
-                <input type="date" name="ckn-out" id="ckn-out" />
-                <select name="guests" id="guests">
+        <div id="booknow">
+            <form action="./index.php#check" method="get">
+                <input type="date" name="ckn-in" id="ckn-in" required />
+                <input type="date" name="ckn-out" id="ckn-out" required />
+                <select name="guests" id="guests" required>
                     <option value="Guests" selected hidden invisible>Guests</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -80,20 +86,22 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
                 <input type="submit" value="Calculate price" id="btn-calculate" />
             </form>
         </div>
-        <?php include_once("book.php"); ?>
+        <?php include_once("./pages/book.php"); ?>
     </div>
 
     <h4>
         <a href=" https://booking.com/" target="_blank">BOOKING.COM </a> <b>|</b> TRAVELLER REVIEW AWARDS 2021 -
         Sunrise Apartments <span>9.8<b> out of 10</b> </span>
     </h4>
-    <?php include_once("location.php"); ?>
+    <div id="location">
+        <?php include_once("./pages/location.php"); ?>
+    </div>
     <div id="about">
-        <?php include_once("about.php"); ?>
+        <?php include_once("./pages/about.php"); ?>
     </div>
 
     <div id="contact">
-        <?php include_once("contact.php"); ?>
+        <?php include_once("./pages/contact.php"); ?>
     </div>
 
     <footer>

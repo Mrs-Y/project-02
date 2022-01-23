@@ -1,11 +1,11 @@
 @font-face {
 	font-family: Gayathri;
-	src: url(./font/Gayathri-Regular.ttf);
+	src: url(../font/Gayathri-Regular.ttf);
 }
-@font-face {
+/* @font-face {
 	font-family: JennaSue;
-	src: url(./font/JennaSue.ttf);
-}
+	src: url(../font/JennaSue.ttf);
+} */
 @media only screen and (max-width: 600px) {
 	nav ul li {
 		float: none;
@@ -131,6 +131,16 @@ li.btn-xy {
 	margin-right: 20px;
 	padding: 25px 10px 0px;
 }
+ul li.backbtn {
+	background-color: rgb(19, 15, 14);
+	font-size: 1rem;
+	color: rgb(22, 20, 20);
+	width: 25%;
+	height: 50px;
+	border-radius: 35px;
+	margin-right: 20px;
+	padding: 25px 10px 0px;
+}
 a {
 	font-size: 1.2em;
 	width: 100%;
@@ -181,7 +191,10 @@ h4 a {
 	color: rgba(235, 123, 104, 1);
 	margin-left: 10px;
 }
-
+table.inline-block {
+	margin-left: 5px;
+	width: 35%;
+}
 div.inline-blocks {
 	display: inline-block;
 	width: 30%;
@@ -198,9 +211,6 @@ div.aboutinline {
 	height: 100px;
 	box-sizing: initial;
 	padding: 30px;
-}
-div.bgstyle {
-	background-color: rgba(64, 64, 64, 1);
 }
 div > h1,
 div p .bgstyle {

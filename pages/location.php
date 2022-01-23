@@ -32,58 +32,58 @@
 <body>
     <div style='background-color: #404040;'>
         <div>
-            <table style="display: inline-block;">
+            <table style="display: inline-block;" class="inline-block">
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>Sumarice Memorial Park</td>
+                    <td>2 mins</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>Big Fashion Shopping Center</td>
+                    <td>2 mins</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>Bus Station</td>
+                    <td>1 min</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>City Center</td>
+                    <td>10 mins</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>ATM Cash Dispenser</td>
+                    <td>2 mins</td>
                 </tr>
             </table>
-            <table style="display: inline-block;">
+            <table style="display: inline-block;" class="inline-block">
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>Sumarice Memorial Park</td>
+                    <td>2 mins</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>Big Fashion Shopping Center</td>
+                    <td>2 mins</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>Bus Station</td>
+                    <td>1 min</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>City Center</td>
+                    <td>10 mins</td>
                 </tr>
                 <tr>
                     <td><img src="./images/location1-icon.png" style="width: 30px; height: 30px; margin-right: 10px;"></td>
-                    <td>Big Fashion</td>
-                    <td>5 mins</td>
+                    <td>ATM Cash Dispenser</td>
+                    <td>2 mins</td>
                 </tr>
             </table>
         </div>
