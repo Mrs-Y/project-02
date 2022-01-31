@@ -22,7 +22,17 @@
 </head>
 
 <body>
-
+    <header>
+        <nav id="navigation">
+            <ul>
+                <li class="left"><a href="../index.php" target="_self">Home</a></li>
+                <li class="left"><a href="../index.php#about" target="_self">About</a></li>
+                <li class="left"><a href="../index.php#contact" target="_self">Contact Us</a></li>
+                <li class="rightbook"><a href="./book.php" target="_self" id="booknow">Book Now</a></li>
+            </ul>
+            <img src="../images/cover2.jpg" alt="cover.jpg" id="img-home" />
+        </nav>
+    </header>
     <div id="home">
         <div class="bgstyle">
             <h1>Welcome to Sunrise Aparments!</h1>
@@ -63,10 +73,6 @@
             new Gallery("../images/galery/one-1-2.jpg", "one-2.jpg", "One - Kitchen"),
             new Gallery("../images/galery/one-1-3.jpg", "one-3.jpg", "One - Bedroom"),
             new Gallery("../images/galery/one-1-4.jpg", "one-4.jpg", "One - Bedroom"),
-            new Gallery("../images/galery/one-1-5.jpg", "one-5.jpg", "One - Bathroom"),
-            new Gallery("../images/galery/one-1-6.jpg", "one-6.jpg", "One - Living Room"),
-            new Gallery("../images/galery/one-1-7.jpg", "one-7.jpg", "One - Living Room"),
-            new Gallery("../images/galery/one-1-8.jpg", "one-8.jpg", "One - Living Room"),
         ];
         foreach ($gallery as $image) {
             $image->print_gallery();
@@ -82,10 +88,6 @@
             new Gallery("../images/galery/five-1-2.jpg", "five-2.jpg", "Five - Kitchen"),
             new Gallery("../images/galery/five-1-3.jpg", "five-3.jpg", "Five - Bedroom"),
             new Gallery("../images/galery/five-1-4.jpg", "five-4.jpg", "Five - Bedroom"),
-            new Gallery("../images/galery/five-1-5.jpg", "five-5.jpg", "Five - Bathroom"),
-            new Gallery("../images/galery/five-1-6.jpg", "five-6.jpg", "Five - Living Room"),
-            new Gallery("../images/galery/five-1-7.jpg", "five-7.jpg", "Five - Living Room"),
-            new Gallery("../images/galery/five-1-8.jpg", "five-8.jpg", "Five - Living Room"),
         ];
         foreach ($gallery1 as $image) {
             $image->print_gallery();
@@ -101,10 +103,6 @@
             new Gallery("../images/galery/nine-1-2.jpg", "nine-2.jpg", "Nine - Kitchen"),
             new Gallery("../images/galery/nine-1-3.jpg", "nine-3.jpg", "Nine - Bedroom"),
             new Gallery("../images/galery/nine-1-4.jpg", "nine-4.jpg", "Nine - Bedroom"),
-            new Gallery("../images/galery/nine-1-5.jpg", "nine-5.jpg", "Nine - Bathroom"),
-            new Gallery("../images/galery/nine-1-6.jpg", "nine-6.jpg", "Nine - Living Room"),
-            new Gallery("../images/galery/nine-1-7.jpg", "nine-7.jpg", "Nine - Living Room"),
-            new Gallery("../images/galery/nine-1-8.jpg", "nine-8.jpg", "Nine - Living Room"),
         ];
         foreach ($gallery2 as $image) {
             $image->print_gallery();
@@ -113,7 +111,7 @@
     </div>
     <div>
         <ul>
-            <li class='backbutton'><a href=" javascript:history.back(1)">Go Back</a></li>
+            <li class='backbutton'><a href=" javascript:history.back(1)" class="backbutton">Go Back</a></li>
         </ul>
     </div>
 </body>

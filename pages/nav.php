@@ -11,10 +11,10 @@
 <body>
     <nav id="navigation">
         <ul>
-            <li class="left"><a href="#home" target="_self">Home</a></li>
-            <li class="left"><a href="#about" target="_self">About</a></li>
-            <li class="left"><a href="#contact" target="_self">Contact Us</a></li>
-            <li class="rightbook"><a href="#check" target="_self" id="booknow">Book Now</a></li>
+            <li class="left"><a href="./index.php" target="_self">Home</a></li>
+            <li class="left"><a href="./index.php#about" target="_self">About</a></li>
+            <li class="left"><a href="./index.php#contact" target="_self">Contact Us</a></li>
+            <li class="rightbook"><a href="./pages/book.php" target="_self" id="booknow">Book Now</a></li>
         </ul>
         <img src="./images/cover2.jpg" alt="cover.jpg" id="img-home" />
     </nav>

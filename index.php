@@ -60,8 +60,8 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
 
     <div>
         <div id="check">
-            <p style="font-size: 2em; color: #ffcbae;"><i>The best price is on our site!</i></p>
-            <span style="font-size: 1.3em; color: #eb7b68;">$135/night</span>
+            <p style="font-size: 2em; color: #c79625;"><i>The best price is on our site!</i></p>
+            <span style="font-size: 1.7em; color: #c79625;">$135/night</span>
         </div>
         <?php
         if (isset($totalprice)) {
@@ -85,8 +85,11 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
                 <label for="checkbox-food" class="ckbx-left">$30/day <span class="food">food included</span></label><br>
                 <input type="submit" value="Calculate price" id="btn-calculate" />
             </form>
+            <form action="./pages/book.php" method="post">
+                <input type="submit" value="Select Apartment" id="btn-book" />
+            </form>
         </div>
-        <?php include_once("./pages/book.php"); ?>
+
     </div>
 
     <h4>
@@ -103,7 +106,11 @@ if (isset($_GET["ckn-in"]) && isset($_GET["ckn-out"]) && isset($_GET["guests"]))
     <div id="contact">
         <?php include_once("./pages/contact.php"); ?>
     </div>
-
+    <?php
+    if (!isset($_SESSION['user'])) {
+        die('Please, click <a href="./pages/login.php">here</a> to login.');
+    }
+    ?>
     <footer>
         <div class="inlinefooter">
             <ul>

@@ -16,7 +16,7 @@
 
     td {
         text-align: center;
-        color: #ffcbae;
+        color: #c79625;
         font-size: 1em;
         width: 33%;
     }
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div style='background-color: #404040;'>
+    <div style='background-color: #14312a;'>
         <div>
             <table style="display: inline-block;" class="inline-block">
                 <tr>

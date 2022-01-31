@@ -14,7 +14,7 @@
 	}
 
 	li.btn-xy {
-		background-color: rgb(19, 15, 14);
+		background-color: #14312a;
 		font-size: 1rem;
 		width: 35%;
 
@@ -40,7 +40,7 @@
 	div.inline-blocks {
 		display: block;
 		float: none;
-		border: 1px solid rgba(235, 123, 104, 1);
+		border: 1px solid #c79625;
 		border-radius: 100px;
 		box-sizing: initial;
 		padding-top: 70px;
@@ -65,12 +65,12 @@ body {
 }
 ::-webkit-scrollbar-thumb {
 	background: transparent;
-	border: rgba(235, 123, 104, 1) 2px solid;
+	border: #c79625 2px solid;
 	border-radius: 15px;
 }
 header {
 	width: 100%;
-	background-color: rgba(64, 64, 64, 1);
+	background-color: #14312a;
 }
 nav #navigation {
 	width: auto;
@@ -84,7 +84,7 @@ nav #img-home {
 	padding-bottom: 0px;
 }
 nav li.rightbook {
-	border: rgba(235, 123, 104, 1) solid 2px;
+	border: #c79625 solid 2px;
 	border-radius: 50px;
 	box-sizing: border-box;
 	float: right;
@@ -100,16 +100,11 @@ ul {
 	list-style-type: none;
 	padding: 5px;
 }
-ul li.amenities {
-	display: inline;
-	text-align: right;
-	padding-left: 20px;
-}
 nav a:hover {
-	text-decoration: rgba(235, 123, 104, 1) 2px solid underline;
+	text-decoration: #c79625 2px solid underline;
 }
 nav li:active {
-	background-color: rgba(255, 203, 174, 1);
+	background-color: #c79625;
 }
 li {
 	display: inline-block;
@@ -119,10 +114,10 @@ li {
 }
 li a {
 	text-decoration: none;
-	color: rgba(235, 123, 104, 1);
+	color: #efeadd;
 }
 li.btn-xy {
-	background-color: rgb(19, 15, 14);
+	background-color: #14312a;
 	font-size: 1rem;
 	color: rgb(22, 20, 20);
 	width: 25%;
@@ -132,7 +127,7 @@ li.btn-xy {
 	padding: 25px 10px 0px;
 }
 ul li.backbtn {
-	background-color: rgb(19, 15, 14);
+	background-color: #14312a;
 	font-size: 1rem;
 	color: rgb(22, 20, 20);
 	width: 25%;
@@ -154,28 +149,37 @@ a.btn-xy {
 input.btn-send {
 	text-decoration: none;
 	font-size: 1.2em;
-	color: #ffcbae;
-	background-color: #1a1a1a;
+	color: #efeadd;
+	background-color: #14312a;
 	width: 15%;
 	height: 50px;
 	border-radius: 25px;
 	margin-right: 30%;
 }
 input#btn-calculate {
-	background-color: #1a1a1a;
+	background-color: #14312a;
 	font-size: 1.5em;
-	color: #ffcbae;
+	color: #efeadd;
 	width: 50%;
 	height: 50px;
 	border-radius: 25px;
 	margin-top: 35px;
+}
+input#btn-book {
+	background-color: #c79625;
+	font-size: 1.5em;
+	color: #efeadd;
+	width: 50%;
+	height: 50px;
+	border-radius: 25px;
+	margin-top: 5px;
 }
 h1,
 h2 {
 	font-family: JennaSue, Geneva, Tahoma, sans-serif;
 	font-size: 4em;
 	margin-bottom: 5px;
-	color: rgba(235, 123, 104, 1);
+	color: #c79625;
 }
 h3 {
 	font-family: JennaSue, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -188,7 +192,7 @@ h4 {
 }
 h4 a {
 	text-decoration: none;
-	color: rgba(235, 123, 104, 1);
+	color: #c79625;
 	margin-left: 10px;
 }
 table.inline-block {
@@ -197,11 +201,24 @@ table.inline-block {
 }
 div.inline-blocks {
 	display: inline-block;
-	width: 30%;
-	border: 1px solid rgba(235, 123, 104, 1);
+	width: 100%;
+	height: 300px;
+	border: 1px solid #c79625;
 	border-radius: 100px;
 	box-sizing: initial;
-	padding-top: 70px;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+div.single {
+	display: inline-block;
+	width: 50%;
+	height: 90%;
+}
+ul li.amenities {
+	display: initial;
+	text-align: center;
+	padding-left: 20px;
 }
 
 div.aboutinline {
@@ -214,11 +231,11 @@ div.aboutinline {
 }
 div > h1,
 div p .bgstyle {
-	text-shadow: 2px 2px #1a1a1a 20px;
+	text-shadow: 2px 2px #14312a 20px;
 }
 p.style-p {
 	font-size: 1.5em;
-	color: #1a1a1a;
+	color: #14312a;
 	margin: 5px 0px;
 }
 p.style-p2 {
@@ -247,7 +264,8 @@ label.ckbx-left {
 	width: 30%;
 }
 input[type=text],
-input[type=email] {
+input[type=email],
+input[type=password] {
 	border-style: none;
 	width: 50%;
 	height: 50px;
@@ -259,7 +277,7 @@ input[type=email] {
 input[type=date],
 select {
 	border: none;
-	background-color: rgba(255, 203, 174, 1);
+	background-color: #c79625;
 	font-family: gayathri, "open-sans";
 	padding-left: 10%;
 	font-size: 1.2em;
@@ -282,6 +300,8 @@ textarea#message {
 	margin-bottom: 20px;
 }
 textarea.scroller {
+	width: 50%;
+	height: 80px;
 	padding-top: 10px;
 	text-align: center;
 	border-style: none;
@@ -294,12 +314,12 @@ textarea.scroller {
 	max-width: 100%;
 }
 hr {
-	background-color: rgba(64, 64, 64, 1);
-	border-style: 2px solid rgba(235, 123, 104, 1);
+	background-color: #14312a;
+	border-style: 2px solid #c79625;
 }
 footer {
-	background-color: rgba(64, 64, 64, 1);
-	color: rgba(235, 123, 104, 1);
+	background-color: #14312a;
+	color: rgba#efeadd;
 }
 footer li {
 	display: inline-block;
@@ -311,5 +331,10 @@ footer div .inlinefooter {
 }
 span .totalprice {
 	font-family: gayathri, "open-sans";
-	color: rgba(64, 64, 64, 1);
+	color: #14312a;
+}
+li.backbutton,
+a.backbutton {
+	width: 40%;
+	color: #c79625;
 }
